@@ -6,8 +6,7 @@ modular-multiplication unitary, continued-fraction post-processing of
 the measured phases, and the classical gcd step that turns the order
 into factors.
 
-This is #20 in my portfolio and #6 in my quantum series (`quantum-circuits-implementation` was #1,
-`bb84-qkd-implementation` was #2) — and the famous one: the algorithm
+The famous one: the algorithm
 that broke RSA in theory. I love molecular engineering, and above all
 QUANTUM.
 
@@ -29,8 +28,11 @@ work (4):      |0001>──U^(2^0)──U^(2^1)──U^(2^2)──U^(2^3)
 
 The multiply-by-7-mod-15 gate is a compiled swap+X construction
 (hardcoded for N = 15, a = 7 — that hardcoding is what "compiled"
-means). Phase estimation returns the phases s/4; continued fractions
-recover the order r = 4; gcds give the factors. See [docs/architecture.md](docs/architecture.md) for the honest
+means). A general Shor implementation would synthesize the
+modular-multiplication circuit for arbitrary N and a; that synthesis
+is the hard part this implementation skips. Phase estimation returns
+the phases s/4; continued fractions recover the order r = 4; gcds give
+the factors. See [docs/architecture.md](docs/architecture.md) for the honest
 story on why this doesn't factor RSA-2048.
 
 ## Quickstart

@@ -7,8 +7,7 @@ in Python/Qiskit: quantum phase estimation of a compiled
 modular-multiplication unitary, continued-fraction post-processing,
 and the classical gcd step that turns the order into factors.
 
-This is #3 in my quantum series (`quantum-circuits-implementation` was #1,
-`bb84-qkd-implementation` was #2) — and the famous one: the algorithm
+The famous one: the algorithm
 that broke RSA in theory.
 
 ## Layout
