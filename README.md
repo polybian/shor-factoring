@@ -31,7 +31,7 @@ means). A general Shor implementation would synthesize the
 modular-multiplication circuit for arbitrary N and a; that synthesis
 is the hard part this implementation skips. Phase estimation returns
 the phases s/4; continued fractions recover the order r = 4; gcds give
-the factors. See [docs/architecture.md](docs/architecture.md) for the honest
+the factors. See [docs/architecture.md](docs/architecture.md) for the full
 story on why this doesn't factor RSA-2048.
 
 ## Quickstart
@@ -65,4 +65,4 @@ design — and that gap is what quantum engineering exists to close.
 
 [simplified-explanation.md](simplified-explanation.md) — Shor's
 algorithm without scary math: the famous lock, the rhythm trick, and
-the honest gap to RSA-2048 (Spanish).
+the real gap to RSA-2048 (Spanish).
