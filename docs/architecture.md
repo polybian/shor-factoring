@@ -24,8 +24,7 @@ shor-factoring/
 │   ├── 01_shor_15.py          # full Shor pipeline: 15 = 3 x 5
 │   └── 02_order_finding.py    # the quantum subroutine, standalone (r = 4)
 ├── docs/
-│   ├── architecture.md        # this file
-│   └── interview-answers.md
+│   └── architecture.md        # this file
 └── simplified-explanation.md  # plain-language guide (Spanish)
 ```
 
@@ -58,8 +57,7 @@ swap(0,1); swap(1,2); swap(2,3); X on all four qubits
 which maps |x⟩ → |7x mod 15⟩ for 1 ≤ x ≤ 14 (verified exhaustively by
 statevector simulation). Repeating it `power` times gives ×7^power.
 Counting qubit j uses power = 2^j, i.e. U^(2^j). The gate hardcodes
-N = 15 and a = 7 — that hardcoding is exactly what "compiled" means
-(see interview-answers.md).
+N = 15 and a = 7 — that hardcoding is exactly what "compiled" means.
 
 ## Why the measured phases are s/4
 
@@ -90,5 +88,4 @@ guessing.
   dyadic rationals, so floats would only add noise.
 - **Assertions as the verdict**: script 01 asserts {p, q} == {3, 5};
   script 02 asserts r == 4. The conclusion is a passing check.
-- **Honest scope**: no claim beyond N = 15 — see interview-answers.md
-  for the RSA-2048 gap.
+- **Honest scope**: no claim beyond N = 15.
