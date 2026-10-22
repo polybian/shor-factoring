@@ -7,8 +7,7 @@ the measured phases, and the classical gcd step that turns the order
 into factors.
 
 The famous one: the algorithm
-that broke RSA in theory. I love molecular engineering, and above all
-QUANTUM.
+that broke RSA in theory.
 
 ## The two implementations
 
